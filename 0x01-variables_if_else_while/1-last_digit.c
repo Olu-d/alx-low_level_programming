@@ -4,7 +4,8 @@
 /* more headers goes there */
 
 /**
-  * main - Returns status of random n (positive, negative, zero)
+  * main - Returns the last digit of a random number and determines
+  * whether or not it is less than 6, greater than 5 or equal to 0.
   * Return: 0 (success)
 */
 int main(void)

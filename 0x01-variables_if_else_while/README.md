@@ -40,3 +40,18 @@ Repo:
 GitHub repository: alx-low_level_programming
 Directory: 0x01-variables_if_else_while
 File: 1-last_digit.c
+
+
+2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
+mandatory
+Write a program that prints the alphabet in lowercase, followed by a new line.
+
+You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
+All your code should be in the main function
+You can only use putchar twice in your code
+
+Repo:
+
+GitHub repository: alx-low_level_programming
+Directory: 0x01-variables_if_else_while
+File: 2-print_alphabet.c
