@@ -21,7 +21,9 @@ int main(void)
 		{
 			for (thir_d = (sec_d + 1); thir_d <= '9'; thir_d++)
 			{
-				putchar(fir_d) && putchar(sec_d) && putchar(thir_d);
+				putchar(fir_d);
+				putchar(sec_d);
+				putchar(thir_d);
 			if (!(fir_d == '7' && sec_d == '8' && thir_d == '9'))
 			{
 				putchar(',');
