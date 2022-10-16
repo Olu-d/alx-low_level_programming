@@ -1,22 +1,24 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
-  * main- print all hexadecimal numbers (base16) using putchar
-  * Return: 0 (success)
-  */
+   *main - prints hexadecimal base 0123456789abcdef, using putchar
+    *Return: Always 0 (Success)
+     */
+
 int main(void)
 {
-	int b16 = 0;
-	int b10 = 0;
-
-	for (b16 = 0; b16 <= 15; b16++)
+	int n = '0';
+	int a_to_f = 'a';
+	while (n <= '9') /*print 0-9*/
 	{
-	/* printf("%x", b16); */
-		b10 = printf("%x", b16); /*assign int value to b10*/
-		int putchar(int b10);
+		putchar(n);
+		n++;
+	}
+	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
+	{
+		putchar(a_to_f);
+		a_to_f++;
 	}
 	putchar('\n');
 	return (0);
-
-
 }
