@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
   * main - Prints the lowercase alphabets a-z with a newline using putchar
-  *
+  * except q and e
   * Return: 0 (success)
   */
 
