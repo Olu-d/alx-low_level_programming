@@ -23,8 +23,10 @@ int main(void)
 			{
 				putchar(fir_d) && putchar(sec_d) && putchar(thir_d);
 			if (!(fir_d == '7' && sec_d == '8' && thir_d == '9'))
+			{
 				putchar(',');
 				putchar(' ');
+			}
 			}
 		}
 	}
