@@ -16,10 +16,16 @@ int main(void)
 		{
 			putchar(tens);
 			putchar(ones);
+			
 			if (tens == '9' && ones == '9') /*skip comma at end*/
+			{	
 				break;
+			}
+			else
+			{
 				putchar(',');
 				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
