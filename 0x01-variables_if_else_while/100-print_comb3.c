@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 /**
- * main - entry point.
+ * main - entry point. Print unique double digit comintions of 
+ * 0-9 skipping repeat considering 01 to be the same combination as 10
  * Return: 0 (success)
  */
 
