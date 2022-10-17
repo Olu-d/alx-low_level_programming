@@ -24,8 +24,11 @@ int main(void)
 		{
 			for (thir_d = '0'; thir_d <= '9'; thir_d++)
 			{
-				for (fourt_d = '1'; fourt_d <= '9'; fourt_d++)
+				for (fourt_d = '0'; fourt_d <= '9'; fourt_d++)
 				{
+					if (fir_d == '0' && sec_d == '0' && thir_d == '0' && fourt_d == '0')
+					continue;
+
 					putchar(fir_d);
 					putchar(sec_d);
 					putchar(' ');
