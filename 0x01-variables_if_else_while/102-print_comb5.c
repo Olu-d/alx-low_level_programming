@@ -1,33 +1,48 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
-   *main - Entry point, print 00 to 99 using putchar
-    *Return: Always 0 (Success)
-     */
+ * main - entry point. Print combination of two two-digit numbers separated
+ * by space.
+ * Last combo should be 98 99.
+ * Separate with space and comma except last combo - 9899.
+ *
+ * Return: 0 (success)
+ *
+ *
+ */
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int fir_d;
+	int sec_d;
+	int thir_d;
+	int fourt_d;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (fir_d = '0'; fir_d <= '9'; fir_d++)
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (sec_d = '0'; sec_d <= '8'; sec_d++)
 		{
-			putchar(tens);
-			putchar(ones);
-			
-			if (tens == '9' && ones == '9') /*skip comma at end*/
-			{	
-				break;
-			}
-			else
+			for (thir_d = '0'; thir_d <= '9'; thir_d++)
 			{
-				putchar(',');
-				putchar(' ');
-			}
+				for (fourt_d = '1'; fourt_d <= '9'; fourt_d++)
+				{
+					putchar(fir_d);
+					putchar(sec_d);
+					putchar(' ');
+					putchar(thir_d);
+					putchar(fourt_d);
+
+				if (!(fir_d == '9' && sec_d == '8' && thir_d == '9' && fourt_d == '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+					}
+				}
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
+
