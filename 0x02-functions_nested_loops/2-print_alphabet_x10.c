@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
- * print_alphabet - This function prints the alphabets from a - z
- *
+ * print_alphabet_x10- This function prints the alphabets from a-z
+ * i times.
  * No main, so no return statement.
  *
  */
@@ -18,7 +18,7 @@ void print_alphabet_x10(void)
 		{
 			_putchar(alph); /*call _putchar function to print*/
 		}
-	
+
 	_putchar('\n'); /*new line at the end of the print*/
 
 	}
