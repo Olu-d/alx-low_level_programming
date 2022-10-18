@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_alphabet();
+	print_alphabet(); /*call the specified function in the header file*/
 	return (0);
 }
