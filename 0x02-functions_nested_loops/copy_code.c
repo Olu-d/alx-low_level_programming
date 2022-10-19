@@ -9,8 +9,9 @@
  */
 int main()
 {
-    int n = -1024, lastDigit;
-    lastDigit = (n*-1) % 10;
+    int INT_MIN;
+    int n = INT_MIN, lastDigit;
+    lastDigit = n % 10;
     printf("last digit = %d\n\n", lastDigit);
     _putchar('0' + lastDigit);
     return 0;
