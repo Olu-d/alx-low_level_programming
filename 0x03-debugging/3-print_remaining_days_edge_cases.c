@@ -39,3 +39,12 @@ void print_remaining_days(int month, int day, int year)
 		}
 	}
 }
+
+/*
+*	exceptions
+*	==========
+*	feb should not be more than 28 days in non-leap year - done
+*	the 29th should be the 60th day not the 61th - done, but revealed another edge case
+*	feb should not be more than 29 days in a leap year
+*	no month should be more than 30 days anytime
+*/
