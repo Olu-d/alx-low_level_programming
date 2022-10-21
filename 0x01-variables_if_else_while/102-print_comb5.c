@@ -20,9 +20,9 @@ int main(void)
 
 	for (fir_d = '0'; fir_d <= '9'; fir_d++)
 	{
-		for (sec_d = '0'; sec_d <= '8'; sec_d++)
+		for (sec_d = '0'; sec_d <= '9'; sec_d++)
 		{
-			for (thir_d = '0'; thir_d <= '9'; thir_d++)
+			for (thir_d = (fir_d + 1); thir_d <= '9'; thir_d++)
 			{
 				for (fourt_d = (sec_d + 1); fourt_d <= '9'; fourt_d++)
 				{
