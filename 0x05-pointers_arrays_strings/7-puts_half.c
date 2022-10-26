@@ -40,7 +40,7 @@ void puts_half(char *str)
 
 	if (len % 2 != 0)
 	{
-		for (i = 0; i < half; i++)
+		for (i = 0; i < half + 1; i++)
 		{
 			_putchar(str[i]);
 
