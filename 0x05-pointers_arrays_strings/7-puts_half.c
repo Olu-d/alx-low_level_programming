@@ -4,7 +4,8 @@
 
 /**
  * _strlen - Function to get the length of a string
- * @str: The imput string
+ * @str: The input string
+ * Return: Length of the string
  */
 
 
@@ -24,6 +25,7 @@ int _strlen(char *str)
 /**
  * puts_half - Function to return half a string (first half if number
  * of characters is odd
+ * @str: The input string
  */
 
 void puts_half(char *str)
