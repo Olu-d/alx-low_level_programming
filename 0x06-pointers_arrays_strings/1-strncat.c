@@ -1,5 +1,6 @@
 #include"main.h"
 #include<stdio.h>
+#include<string.h>
 
 /**
  * _strcat - A function taking an array as input that concatenates two strings
@@ -7,6 +8,7 @@
  * @src: Second string to be concatenated
  * Return: dest, which now has the second string concatenated
  */
+
 
 char *_strncat(char *dest, char *src, int n)
 {
@@ -26,11 +28,7 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 
+	dest [i] = '\0';
 
-	
 	return (dest);
-
 }
-
-
-
