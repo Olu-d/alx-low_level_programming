@@ -8,7 +8,7 @@
  * Return: dest, which now has the second string concatenated
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 
 	int i = 0;
@@ -19,14 +19,13 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 
-	while (src[j] != '\0')
+	while (src[j] != '\0' && j <n)
 	{
 		dest[i] = src[j];
-		j++;
 		i++;
+		j++;
 	}
 
-	dest[i] = '\0';
 
 	return (dest);
 
@@ -34,28 +33,3 @@ char *_strcat(char *dest, char *src)
 
 
 
-/* another really way to approach using pointers */
-
-/*
-char *_strcat(char *dest, char *src)
-{
-
-	int i = 0;
-	int j = 0;
-
-	while(*(dest + i))
-		i++;
-
-	while(*(src + j))
-	{
-		*(dest + i) = *(src + j);
-		i++;
-		j++;
-	}
-
-	*(dest + i ) = '\0';
-
-
-	return (dest);
-}
-*/
