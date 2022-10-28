@@ -3,9 +3,10 @@
 #include<string.h>
 
 /**
- * _strcat - A function taking an array as input that concatenates two strings
+ * _strncat - A function taking an array as input that concatenates two strings
  * @dest: Input as well as return parameter
  * @src: Second string to be concatenated
+ * @n: number of bytes to be concatenated from src
  * Return: dest, which now has the second string concatenated
  */
 
@@ -28,7 +29,7 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 
-	dest [i] = '\0';
+	dest[i] = '\0';
 
 	return (dest);
 }
