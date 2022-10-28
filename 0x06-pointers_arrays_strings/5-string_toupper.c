@@ -13,7 +13,6 @@ char *string_toupper(char *str)
 {
 
 	int i = 0;
-	int str_len;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
