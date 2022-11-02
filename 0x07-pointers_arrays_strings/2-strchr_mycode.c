@@ -1,5 +1,5 @@
 #include"main.h"
-#define NULL 0
+#include <stddef.h>
 
 /**
  * _strchr - Returns a pointer to the first occurrence of the
@@ -14,19 +14,16 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 
-	/*continue to increment i until first occurrence of c */
-	while (s[i] != '\0' && s[i] != c)
-		i++;
-
-	if (s[i] == c) /*when you hit c, return address of the location */
+	while (s[i] != '\0')
 	{
-		return (&s[i]);
+		if (s[i] == c)
+		{
+			return (s);
+		}
+	s++;
 	}
-	else
-	{
-		return (NULL);
-	}
-	return (s);
+//	return (s);
 
 
 }
+
