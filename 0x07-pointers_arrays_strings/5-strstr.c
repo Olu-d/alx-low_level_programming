@@ -15,7 +15,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
+	size_t i = 0;
 
 	while (*haystack != '\0')
 	{
