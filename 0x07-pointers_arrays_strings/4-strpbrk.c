@@ -14,7 +14,6 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i, j;
-	int s_len = strlen(s);
 	int accept_len = strlen(accept);
 
 	i = 0;
@@ -31,5 +30,5 @@ char *_strpbrk(char *s, char *accept)
 	s++;
 	i++;
 	}
-
+	return(s);
 }
