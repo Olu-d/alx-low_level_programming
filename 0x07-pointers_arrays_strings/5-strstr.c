@@ -17,6 +17,10 @@ char *_strstr(char *haystack, char *needle)
 {
 	size_t i = 0;
 
+	if (needle[0] == '\0')
+		return (haystack);
+
+
 	while (*haystack != '\0')
 	{
 		if (*haystack == needle[0])
