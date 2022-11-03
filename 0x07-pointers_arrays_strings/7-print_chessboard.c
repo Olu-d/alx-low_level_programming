@@ -1,7 +1,10 @@
 #include"main.h"
 #include<stdio.h>
 
-/********/
+/**
+* print_chessboard - a function that prints the chessboard
+* @a: input 2D array
+*/
 
 
 void print_chessboard(char (*a)[8])
@@ -18,14 +21,5 @@ void print_chessboard(char (*a)[8])
 				printf("\n");
 		}
 	}
-
-
-
-
-
-
-
-
-
 
 }
