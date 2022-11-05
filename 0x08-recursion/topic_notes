@@ -1,0 +1,6 @@
+Recursion
+
+- Implement base case
+- Implement nth case
+- Call itself for n+1th cases
+- Until the base case terminates the recursion
