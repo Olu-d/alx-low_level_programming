@@ -24,7 +24,8 @@ char *_strdup(char *str)
 	 * otherwise, we would have a segfault
 	 */
 	len = strlen(str);
-	string = malloc(sizeof(char) * len);
+	string = malloc(sizeof(char) * (len + 1));
+	/*added 1 for \0 because we are doing a copy, not indexing from 0 */
 
 	if (string == NULL)
 		return (NULL);
