@@ -18,6 +18,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
+
 	/*
 	 * The check for NULL needed to happen before the strlen function
 	 * otherwise, we would have a segfault
@@ -37,5 +38,5 @@ char *_strdup(char *str)
 	 */
 
 
-	return (str);
+	return (string);
 }
