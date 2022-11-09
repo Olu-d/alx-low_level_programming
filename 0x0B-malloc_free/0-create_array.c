@@ -19,12 +19,12 @@ char *create_array(unsigned int size, char c)
 
 	/*Returns NULL if size = 0*/
 	if (size == 0)
-		return(NULL);	
+		return (NULL);
 
 
 	/*update it with character c*/
 	for (i = 0; i <= size; i++)
-	{	
+	{
 		if (str == NULL)
 		{
 			return (NULL);
