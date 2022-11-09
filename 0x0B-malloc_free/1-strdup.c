@@ -11,30 +11,31 @@
 
 char *_strdup(char *str)
 {
-	int len = strlen(str);
+
+
+	int len;
 	char *string;
 
-	/*allocate memory*/
+	if (str == NULL)
+		return (NULL);
+	/*
+	 * The check for NULL needed to happen before the strlen function
+	 * otherwise, we would have a segfault
+	 */
+	len = strlen(str);
 	string = malloc(sizeof(str) * len);
 
-	if (str == NULL)
-	{
+	if (string == NULL)
 		return (NULL);
-	}
-	else if (string == 0)
-	{
-		return (NULL);
-	}
-	else
-	{
-		strcpy(string, str);
-		/**
-		 * using strcpy because string = str would mean reassigning
-		 * the mem address of string to the pointer str. Then freeing
-		 * string will give an error because you would then be trying
-		 * to free a string literal from memory
-		 */
-	}
 
-	return (string);
+	strcpy(string, str);
+	/**
+	 * using strcpy because string = str would mean reassigning
+	 * the mem address of string to the pointer str. Then freeing
+	 * string will give an error because you would then be trying
+	 * to free a string literal from memory
+	 */
+
+
+	return (str);
 }
