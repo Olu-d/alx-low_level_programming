@@ -23,13 +23,13 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	/*allocate memory*/
-	arr = malloc(sizeof(int) * max + 1);
+	arr = malloc(sizeof(int) * (max - min) + 1);
 
 	/*confirm if malloc didnt fail*/
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= max; i++)
+	for (i = min; i <= max; i++)
 	{
 		arr[i] = min;
 		++min;
