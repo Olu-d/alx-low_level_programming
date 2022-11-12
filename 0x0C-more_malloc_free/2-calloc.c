@@ -17,7 +17,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *mem;
 	unsigned int i;
-	int oldsize, newsize;
 
 	/*validate input*/
 	if (nmemb == 0 || size == 0)
