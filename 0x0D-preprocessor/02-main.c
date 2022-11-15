@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main- Returns the name of the file the function is compiled from
