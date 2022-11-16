@@ -2,6 +2,11 @@
 #include<stdio.h>
 #include"dog.h"
 
+/**
+ * print_dog - function to print the contents of a struct
+ * @d: pointer to struct variable
+ */
+
 void print_dog(struct dog *d)
 {
 	/*validate input*/
@@ -12,7 +17,7 @@ void print_dog(struct dog *d)
 		printf("Name: (nil)");
 		printf("Age: %f\n", d->age);
 		printf("Owner: %s\n", d->owner);
-	}	
+	}
       /* else if (d->age == NULL)*/
 	/*{*/
 		/*printf("(nil)");*/
