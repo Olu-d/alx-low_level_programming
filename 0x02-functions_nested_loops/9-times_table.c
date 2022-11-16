@@ -1,27 +1,40 @@
-#include<stdio.h>
+#include"main.h"
 
-int main(void)
+/**
+ * times_table - print multiplication table
+ */
+
+void times_table(void)
 {
-	int num;
-	int ;
-	int mul;
+	int row;
+	int column;
+	int product;
 
-	for(num = 0; num <= 9; first_num++)
+	for (row = 0; row <= 9; row++)
 	{
-		while
+		for (column = 0; column <= 9; column++)
 		{
-		counter <= 9;
-		mul = first_num + first_num;
-		counter++;
+			product = (row * column);
+
+			if (column == 0)
+			{
+				_putchar('0' + product);
+			}
+			else if (product <= 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + product);
+			}
+			else if (product > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
+			}
 		}
-
-		printf("%d", mul);
-		putchar(',');
-		putchar(' ');
+		_putchar('\n');
 	}
-
-	return (0);
-
-
-
 }
