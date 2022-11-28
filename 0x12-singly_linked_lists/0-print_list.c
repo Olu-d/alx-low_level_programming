@@ -2,8 +2,9 @@
 #include"lists.h"
 
 /**
- * size_t - A function that prints the elements of a `list_t` list
- * 
+ * print_list - A function that prints the elements of a `list_t` list
+ * @h : head of stingly linked list
+ *
  * Return: The number of nodes
  */
 
@@ -22,11 +23,11 @@ size_t print_list(const list_t *h)
 			i++;
 			continue;
 		}
-		printf("[%d] %s\n",h->len, h->str);
+		printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
 		i++;
 	}
-	
+
 	return (i);
 
 }
