@@ -8,32 +8,15 @@
  * Return: The node at specified index, else return NULL.
  */
 
-int get_length(listint_t *h)
-{
-	int count = 0;
-
-	while (h)
-	{
-		count++;
-		h = h->next;
-	}
-	return (count);
-}
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int n;
 	unsigned int count = 0;
 
-	n = get_length(head);
-
-	if (index > n)
-	{
-		printf("The index is greated than n");
+	if (head == NULL)
 		return (NULL);
-	}
-	else
-	{
+
 	while (head)
 	{
 		if (count == index)
