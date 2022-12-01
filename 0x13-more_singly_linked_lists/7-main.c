@@ -17,11 +17,9 @@ int main(void)
     add_nodeint_end(&head, 0);
     add_nodeint_end(&head, 1);
     add_nodeint_end(&head, 2);
-    /*
-     *print_listint(head);
-     *node = get_nodeint_at_index(head, 5);
-     *printf("%d\n", node->n);
-     */
+    print_listint(head);
+    node = get_nodeint_at_index(head, 5);
+    printf("%d\n", node->n);
     add_nodeint_end(&head, 3);
     add_nodeint_end(&head, 4);
     add_nodeint_end(&head, 98);
