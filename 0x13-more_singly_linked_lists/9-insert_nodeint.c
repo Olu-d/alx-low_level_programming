@@ -10,50 +10,6 @@
  * Return: address of new node or NULL if it failed
  */
 
-/*
- *listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
- *{
- *
- *       listint_t *new_node = malloc(sizeof(listint_t));
- *       unsigned int count = 0;
- *       unsigned int prev_idx = (idx - 1);
- *       listint_t *traverser = *head;
- *
- *       if (head == NULL)
- *              return (NULL);
- *
- *       if (new_node == NULL)
- *              return (NULL);
- *
- *       new_node->n = n;
- *       new_node->next = NULL;
- *
- *       if (idx == 0)
- *       {
- *              new_node->next = traverser;
- *              free(*head);
- *              *head = new_node;
- *              return (traverser);
- *       }
- *       
- *       [>guage the length of the list<]
- *       while (count < prev_idx)
- *       {
- *              traverser = traverser->next;
- *              count++;
- *              
- *              if (traverser == NULL) [>if list is outside range at index<]
- *                     return (NULL);
- *
- *       }
- *
- *       [> insert list <]
- *       new_node->next = traverser->next;
- *       traverser->next = new_node;
- *       return (traverser);
- *}
- */
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 
