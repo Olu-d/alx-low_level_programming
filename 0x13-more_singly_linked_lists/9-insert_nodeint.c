@@ -27,24 +27,27 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new_node->n = n;
 	new_node->next = NULL;
 
-	while (traverser != NULL)
+	if (idx == 0)
 	{
-		if (idx == 0)
-		{
-			new_node->next = traverser;
-			free(*head);
-			*head = new_node;
-			return (traverser);
-		}
-		else if (idx > 0 && count == prev_idx)
-		{
-			if (traverser == NULL)
-				return (NULL);
-			new_node->next = traverser->next;
-			traverser->next = new_node;
-		}
-		count++;
-		traverser = traverser->next;
+		new_node->next = traverser;
+		free(*head);
+		*head = new_node;
+		return (traverser);
 	}
+	
+	/*guage the length of the list*/
+	while (count < prev_idx)
+	{
+		traverser = traverser->next;
+		count++;
+		
+		if (traverser == NULL) /*if list is outside range at index*/
+			return (NULL);
+
+	}
+
+	/* insert list */
+	new_node->next = traverser->next;
+	traverser->next = new_node;
 	return (traverser);
 }
