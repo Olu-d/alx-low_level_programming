@@ -38,6 +38,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		else if (idx > 0 && count == prev_idx)
 		{
+			if (traverser == NULL)
+				return (NULL);
 			new_node->next = traverser->next;
 			traverser->next = new_node;
 		}
