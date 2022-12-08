@@ -6,7 +6,7 @@
 
 
 /**
- * read_textfile - A function that read a text file and prints it to the 
+ * read_textfile - A function that read a text file and prints it to the
  * POSIX standard output
  * @filename: name of file to be printed
  * @letters: number of letters if should read and print
@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *c = malloc(letters * sizeof(char));
 
 	/* open the file */
-       fd = open("Requiescat", O_RDONLY); 
+	fd = open("Requiescat", O_RDONLY);
 	if (fd == -1)
 		return (0);
 
@@ -35,10 +35,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	c[count_read] = '\0';
 
 	/* close the file */
-	close (fd);
+	close(fd);
 
 	/* write to stdout */
-       fd = open("Requiescat", O_RDONLY); 
+	fd = open("Requiescat", O_RDONLY);
 	if (fd == -1)
 		return (0);
 
@@ -46,7 +46,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (count_write == -1)
 		return (0);
 
-	close (fd);
+	close(fd);
 
 	return (count_read);
 
