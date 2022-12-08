@@ -23,7 +23,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *c = malloc(letters * sizeof(char));
 
 	/* open the file */
-	fd = open("Requiescat", O_RDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 
@@ -38,7 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 
 	/* write to stdout */
-	fd = open("Requiescat", O_RDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 
