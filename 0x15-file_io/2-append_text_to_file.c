@@ -43,7 +43,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	/* write to the file with append flags */
 	wr_status = write(fd, text_content, sizeof(text_content));
-	if (wr_status == -1)
+	if (wr_status == -1 || wr_status == 13 || wr_status == 9)
 		return (-1);
 
 	/* other conditions */
